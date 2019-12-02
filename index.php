@@ -24,7 +24,11 @@
     if ($conn->query($sql) === TRUE) {
         echo "You've been added to the leaderboard!";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        $sql = "CREATE TABLE Leaderboard (name varchar(255), points int)";
+        
+        if ($conn->query($sql) === TRUE) {
+            echo "Added table.";
+        } 
     }
 
     $conn->close();
