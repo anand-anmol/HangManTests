@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body><? echo("hello this is a test"); ?>
     <script src="demo_newfile.js"></script>
 </body>
 </html>
